@@ -1,0 +1,46 @@
+.page-box {
+  width: 100wh;
+  height: 100vh;
+  .flex();
+  .page();
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  .left {
+    background: 50%/cover no-repeat url('imgs/login_banner.jpg');
+    height: 100vh;
+    width: 50%;
+    max-width: 860px;
+  }
+
+  .right {
+    width: 50%;
+    flex-grow: 10;
+    padding: 0 80px;
+    .flex();
+    justify-content: center;
+
+    .login-box {
+      h1 {
+        line-height: 40px;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+
+      h2 {
+        line-height: 40px;
+        margin-bottom: 40px;
+      }
+
+      width: 560px;
+
+      .help-text {
+        em {
+          color: #3471FF;
+        }
+      }
+    }
+  }
+}

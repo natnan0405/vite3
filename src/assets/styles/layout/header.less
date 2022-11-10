@@ -1,0 +1,77 @@
+.header-box {
+  .flex();
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-left: 20px;
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+
+  .right {
+    margin-right: 24px;
+    .flex();
+    align-items: center;
+
+    .icon-warn {
+      font-size: 18px;
+      color: @gray-normal;
+      margin: 0 18px 0 0;
+    }
+
+    .user-img {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+.pop-box {
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 0 10px #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+
+  .avder-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+
+  h2 {
+    line-height: 18px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    color: @gray-normal;
+  }
+
+  .icon-box {
+    padding: 10px 0 0;
+
+    .icon-same {
+      color: @gray-normal;
+    }
+  }
+}
