@@ -1,7 +1,7 @@
 /*
  * @Author: NanNan
  * @Date: 2022-11-05 15:35:19
- * @LastEditTime: 2022-11-05 15:35:21
+ * @LastEditTime: 2022-11-11 09:11:34
  * @Description:
  */
 import axios from 'axios';
@@ -25,9 +25,9 @@ service.interceptors.response.use(
   (response) => {
     //接收到响应数据并成功后的一些共有的处理，关闭loading等
     const res = response.data;
-    // if (res.code === 5112) {
-    //   window.location.href = '/login';
-    // }
+    if (res.code === 5112) {
+      window.location.href = '/login';
+    }
     return res;
   },
   (error) => {

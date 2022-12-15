@@ -1,7 +1,7 @@
 /*
  * @Author: NanNan
  * @Date: 2022-11-08 18:48:50
- * @LastEditTime: 2022-11-09 14:18:21
+ * @LastEditTime: 2022-12-15 15:35:41
  * @Description:
  */
 const routesData = [
@@ -26,6 +26,22 @@ const routesData = [
       {
         name: '我的审批',
         path: '/work/check',
+      },
+    ],
+  },
+
+  {
+    name: '材料',
+    class: 'icon-work',
+    path: 'work',
+    children: [
+      {
+        name: '全部供应商',
+        path: '/materials/supplier',
+      },
+      {
+        name: '进度计划表',
+        path: '/materials/progress',
       },
     ],
   },

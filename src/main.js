@@ -1,7 +1,7 @@
 /*
  * @Author: NanNan
  * @Date: 2022-11-05 15:18:22
- * @LastEditTime: 2022-11-09 18:56:29
+ * @LastEditTime: 2022-12-15 18:22:59
  * @Description: main.js 注入
  */
 import { createApp } from 'vue';
@@ -14,6 +14,7 @@ import router from '@/router';
 
 import Api from '@/api/api';
 import '@arco-design/web-vue/dist/arco.css';
+import 'moment/dist/locale/zh-cn';
 
 const app = createApp(App);
 

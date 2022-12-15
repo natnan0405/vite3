@@ -1,11 +1,12 @@
 /*
  * @Author: NanNan
  * @Date: 2022-11-08 09:28:02
- * @LastEditTime: 2022-11-10 10:18:26
+ * @LastEditTime: 2022-12-08 11:44:29
  * @Description: 路由
  */
 import LayoutPage from '@/components/layout/index.vue';
 import userRoutes from './modules/user';
+import materialsRoutes from './modules/materials';
 //
 import WorkIndexPage from '@/views/work/index.vue';
 import WorkCheckPage from '@/views/work/check.vue';
@@ -38,6 +39,7 @@ const routes = [
         name: ['首页', '我的审批'],
         component: WorkApplyPage,
       },
+      ...materialsRoutes,
     ],
   },
   ...userRoutes,
